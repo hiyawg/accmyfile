@@ -21,7 +21,7 @@ export class VehiclelistComponent implements OnInit {
     this.getAccident(this.id);
   }
   getAccident(id:any): void {    
-    const rooturl = 'https://traficaccidentreport.herokuapp.com/trafficaccidentanalysis/accident/vehicles';      
+    const rooturl = 'http://localhost:8080/trafficaccidentanalysis/accident/vehicles';      
      this.http.get(rooturl + '/' + id).subscribe(data => {        
       this.vehicle = data;        
        console.log(this.vehicle);                    

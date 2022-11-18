@@ -16,6 +16,7 @@ export class AccidentdetailComponent implements OnInit {
   ngOnInit() {
     
     this.id = this.actRoute.snapshot.paramMap.get('id');
+    console.log('I am in the ngOnInit');
     this.getAccident(this.id);
   }
   getAccident(id:any): void {    

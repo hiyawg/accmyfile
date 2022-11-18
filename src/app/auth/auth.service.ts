@@ -16,8 +16,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AuthService {
- 
-  private loginUrl = 'https://traficaccidentreport.herokuapp.com/api/auth/signin';
+  private loginUrl = 'http://localhost:8080/api/auth/signin'
+  //private loginUrl = 'https://traficaccidentreport.herokuapp.com/api/auth/signin';
   private signupUrl = 'https://traficaccidentreport.herokuapp.com/api/auth/signup';
   public user: Observable<any>;
   private currentUserSubject: BehaviorSubject<any>;

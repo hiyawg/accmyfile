@@ -38,7 +38,7 @@ dataSource: MatTableDataSource<any>;
     }
   }
   getAccident(): void {    
-    const rooturl = 'https://traficaccidentreport.herokuapp.com/trafficaccidentanalysis/accident/getall';      
+    const rooturl = 'http://localhost:8080/trafficaccidentanalysis/accident/getall';      
      this.http.get<any[]>(rooturl).subscribe(data => {        
       this.accidents = data;
       this.dataSource = new MatTableDataSource(this.accidents);

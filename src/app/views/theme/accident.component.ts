@@ -66,8 +66,8 @@ export class AccidentComponent implements OnInit {
   registerAccident(form: any){
    console.log('adding a person');
    console.log(form);
-   
-    this.http.post('https://traficaccidentreport.herokuapp.com/trafficaccidentanalysis/accident/save', form)
+   //https://traficaccidentreport.herokuapp.com/trafficaccidentanalysis/accident/save
+    this.http.post('http://localhost:8080/trafficaccidentanalysis/accident/save', form)
     .subscribe(
       data => {
       this.accident = data;
